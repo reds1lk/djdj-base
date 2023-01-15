@@ -27,7 +27,7 @@ class CheckSign
             $params = $request->param();
         }
         foreach ($params as $k => $v) {
-            if (is_null($v) || trim($v) == '') {
+            if (is_null($v) || (is_string($v) && trim($v) == '')) {
                 continue;
             }
             $request->$k = $v;
