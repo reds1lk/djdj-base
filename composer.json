@@ -1,0 +1,28 @@
+{
+    "name": "djdj/base",
+    "description": "东郊微服务公共文件包",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Djdj\\Base\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "yxy"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-orm": "^2.0",
+        "topthink/think-swoole": "^3.1",
+        "ext-json": "*",
+        "ext-redis": "*",
+        "ext-curl": "*",
+        "ext-bcmath": "*",
+        "ext-iconv": "*",
+        "ext-openssl": "*",
+        "predis/predis": "^2.0"
+    }
+}
