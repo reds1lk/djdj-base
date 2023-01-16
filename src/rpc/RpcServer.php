@@ -144,7 +144,7 @@ class RpcServer
                 "Tags" => [$this->tags],
                 "Address" => $this->ip,
                 "Port" => $this->port,
-                "CheckSign" => ["TCP" => $this->ip . ':' . $this->port, "Interval" => "5s"]
+                "Check" => ["TCP" => $this->ip . ':' . $this->port, "Interval" => "5s"]
             ];
             //注册服务
             $consul = new ConsulService();
