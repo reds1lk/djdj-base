@@ -29,7 +29,7 @@ class RpcServer
         $this->tags = config('consul.client.tags');
         $this->ip = config('consul.client.ip');
         $this->port = (int)config('consul.client.port');
-        $this->server = new Server($this->ip, $this->port);
+        $this->server = new Server('0.0.0.0', $this->port);
         $this->server->set(array(
             'open_length_check' => true,    // 开启协议解析
             'package_length_type' => 'N',     // 长度字段的类型
